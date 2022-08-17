@@ -2,17 +2,27 @@
 
 # Creator:           Caleb Celius
 # Game_Title:        Nursery Rhymes Game
-# Game_Description:  Can't quite remember what all the lines in a nursery rhyme are??? Well fear not as this game provides you with a few nursery rhymes to choose from and shows you all the lyrics tho that particular nursery rhyme. I hope you have the courage the sing along!!!
-# Game_Version:      2.0.1
+# Game_Description:  Can't quite remember what all the lines in a nursery rhyme are??? Well fear not as this game provides you with a few nursery rhymes to choose from and shows you all the lyrics to that particular nursery rhyme. I hope you have the courage the sing along!!!
+# Game_Version:      2.0.2
 
 NR1="Jack and Jill"
 NR2="Itsy Bitsy Spider"
 NR3="Mary Had a Little Lamb"
+NR4="A Sailor Went To Sea"
+NR5="Bingo"
+NR6="Head Shoulders Knees and Toes"
+NR7="Hickory Dickory Dock"
+NR8="Humpty Dumpty"
 
 echo "-----------Select a Nursery rhymes-------------"
 echo "(A) Jack and Jill"
 echo "(B) Itsy Bitsy Spider"
 echo "(C) Mary Had a Little Lamb"
+echo "(D) A Sailor Went to Sea"
+echo "(E) Bingo"
+echo "(F) Head Shoulders Knees and Toes"
+echo "(G) Hickory Dickory Dock"
+echo "(H) Humpty Dumpty"
 echo ""
 echo ""
 echo "##########################################"
@@ -74,6 +84,118 @@ then
 
          echo "And waited patiently about,"
          echo "till Mary did appear."
+
+elif [[ $a = D || $a = d ]]
+then
+         echo "---------------$NR4---------------"
+         echo ""
+         sleep 1
+         echo "A sailor went to sea, sea, sea"
+	 echo "To see what he could see, see, see"
+	 echo "But all that he could see, see, see"
+	 echo "Was the bottom of the deep blue sea, sea, sea!"
+
+	 echo "A sailor went to knee, knee, knee"
+	 echo "To see what he could knee, knee, knee"
+	 echo "But all that he could knee, knee, knee"
+	 echo "Was the bottom of the deep blue knee, knee, knee!"
+	 echo "Sea, sea, sea"
+
+	 echo "A sailor went to chop, chop, chop"
+	 echo "To see what he could chop, chop, chop"
+	 echo "But all that he could chop, chop, chop"
+	 echo "Was the bottom of the deep blue chop, chop, chop!"
+	 echo "Knee, knee, knee"
+	 echo "Sea, sea, sea"
+
+elif [[ $a = E || $a = e ]]
+then
+         echo "---------------$NR5---------------"
+         echo ""
+         sleep 1
+         echo "There was a farmer who had a dog,"
+	 echo "And Bingo was his name-O."
+	 echo "B-I-N-G-O!"
+	 echo "B-I-N-G-O!"
+	 echo "B-I-N-G-O!"
+	 echo "And Bingo was his name-O!"
+
+	 echo "There was a farmer who had a dog,"
+	 echo "And Bingo was his name-O."
+	 echo "(Clap)-I-N-G-O!"
+	 echo "(Clap)-I-N-G-O!"
+	 echo "(Clap)-I-N-G-O!"
+	 echo "And Bingo was his name-O!"
+
+ 	 echo "There was a farmer who had a dog,"
+         echo "And Bingo was his name-O."
+         echo "(Clap - Clap)-N-G-O!"
+         echo "(Clap - Clap)-N-G-O!"
+         echo "(Clap - Clap)-N-G-O!"
+         echo "And Bingo was his name-O!"
+
+	 echo "There was a farmer who had a dog,"
+         echo "And Bingo was his name-O."
+         echo "(Clap - Clap - Clap)-G-O!"
+         echo "(Clap - Clap - Clap)-G-O!"
+         echo "(Clap - Clap - Clap)-G-O!"
+         echo "And Bingo was his name-O!"
+
+	 echo "There was a farmer who had a dog,"
+         echo "And Bingo was his name-O."
+         echo "(Clap - Clap - Clap - Clap)-O!"
+         echo "(Clap - Clap - Clap - Clap)-O!"
+         echo "(Clap - Clap - Clap - Clap)-O!"
+         echo "And Bingo was his name-O!"
+
+	 echo "There was a farmer who had a dog,"
+         echo "And Bingo was his name-O."
+         echo "(Clap - Clap - Clap - Clap - Clap)"
+         echo "(Clap - Clap - Clap - Clap - Clap)"
+         echo "(Clap - Clap - Clap - Clap - Clap)"
+         echo "And Bingo was his name-O!"
+
+elif [[ $a = F || $a = f ]]
+then
+         echo "---------------$NR6---------------"
+         echo ""
+         sleep 1
+         echo "Head, shoulders, knees and toes,"
+	 echo "Knees and toes."
+	 echo "Head, shoulders, knees and toes,"
+ 	 echo "Knees and toes."
+	 echo "And eyes, and ears, and mouth, and nose."
+	 echo "Head, shoulders, knees and toes,"
+	 echo "Knees and toes."
+	 echo "(Repeat)"
+
+elif [[ $a = G || $a = g ]]
+then
+         echo "---------------$NR7---------------"
+         echo ""
+         sleep 1
+	 echo "Hickory Dickory Dock"
+	 echo "The mouse ran up the clock"
+	 echo "The clock struck one"
+	 echo "The mouse ran down"
+	 echo "Hickory Dickory Dock"
+
+	 echo "Hickory Dickory Dock"
+	 echo "The mouse ran up the clock"
+	 echo "The clock struck two"
+	 echo "The mouse went boo!"
+	 echo "Hickroy Dickory Dock"
+
+elif [[ $a = H || $a = h ]]
+then
+         echo "---------------$NR8---------------"
+         echo ""
+         sleep 1
+	 echo "Humpty Dumpty sat on a wall,"
+	 echo "Humpty Dumpty had a great fall."
+	 echo "All the King’s horses and all the King’s men,"
+	 echo "Couldn’t put Humpty together again."
+
 
 
 elif [[ $a = * ]]
