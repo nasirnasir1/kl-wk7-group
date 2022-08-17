@@ -3,13 +3,13 @@
 # Creator:           Caleb Celius
 # Game_Title:        Nursery Rhymes Game
 # Game_Description:  Can't quite remember what all the lines in a nursery rhyme are??? Well fear not as this game provides you with a few nursery rhymes to choose from and shows you all the lyrics tho that particular nursery rhyme. I hope you have the courage the sing along!!!
-# Game_Version:      1.9.0
+# Game_Version:      2.0.1
 
 NR1="Jack and Jill"
 NR2="Itsy Bitsy Spider"
 NR3="Mary Had a Little Lamb"
 
-echo "-----------Select a nursery rhymes-------------"
+echo "-----------Select a Nursery rhymes-------------"
 echo "(A) Jack and Jill"
 echo "(B) Itsy Bitsy Spider"
 echo "(C) Mary Had a Little Lamb"
@@ -21,8 +21,8 @@ echo "##########################################"
 
 read -r a
 
-while  [[ $a = A || $a = a ]]
-do
+if  [[ $a = A || $a = a ]]
+then
         echo "---------------$NR1---------------"
         echo ""
         sleep 1
@@ -38,23 +38,22 @@ do
         echo "To fetch the pail of water,"
         echo "And took it home to Mother dear,"
         echo "Who thanked her son and daughter."
-        
-done
 
-while [[ $a = B || $a = b ]]
-do
-	 echo "---------------$NR2---------------"
-       	 echo ""
+elif [[ $a = B || $a = b ]]
+then
+         echo "---------------$NR2---------------"
+         echo ""
          sleep 1
          echo "The itsy bitsy spider crawled up the water spout."
          echo "Down came the rain, and washed the spider out."
          echo "Out came the sun, and dried up all the rain,"
          echo "and the itsy bitsy spider went up the spout again."
-done
 
-while [[ $a = C || $a = c ]]
-do
-	 echo "---------------$NR3---------------"
+
+
+elif [[ $a = C || $a = c ]]
+then
+         echo "---------------$NR3---------------"
          echo ""
          sleep 1
          echo "Mary Had a Little Lamb Lyrics"
@@ -76,17 +75,15 @@ do
          echo "And waited patiently about,"
          echo "till Mary did appear."
 
-done
 
-if [[ $a = * ]]
-then 
-	echo "Invalid Input....Please try again!!!"
+elif [[ $a = * ]]
+then
+        echo "Invalid Input....Please try again!!!"
 
 else
   exit
 
 fi
-
 
 
 
