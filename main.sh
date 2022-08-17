@@ -3,7 +3,7 @@
 # Creator:           Caleb Celius
 # Game_Title:        Nursery Rhymes Game
 # Game_Description:  Can't quite remember what all the lines in a nursery rhyme are??? Well fear not as this game provides you with a few nursery rhymes to choose from and shows you all the lyrics tho that particular nursery rhyme. I hope you have the courage the sing along!!!
-# Game_Version:      1.8
+# Game_Version:      1.9.0
 
 NR1="Jack and Jill"
 NR2="Itsy Bitsy Spider"
@@ -13,7 +13,11 @@ echo "-----------Select a nursery rhymes-------------"
 echo "(A) Jack and Jill"
 echo "(B) Itsy Bitsy Spider"
 echo "(C) Mary Had a Little Lamb"
-
+echo ""
+echo ""
+echo "##########################################"
+echo "#        Please Select a Letter!         #"
+echo "##########################################"
 
 read -r a
 if  [[ $a = A || $a = a ]]
@@ -34,7 +38,7 @@ then
         echo "And took it home to Mother dear,"
         echo "Who thanked her son and daughter."
 
-elif [[ $a = B ]]
+elif [[ $a = B || $a = b ]]
 then
 	 echo "---------------$NR2---------------"
        	 echo ""
@@ -46,7 +50,7 @@ then
          
          
 
-elif [[ $a = C ]]
+elif [[ $a = C || $a = c ]]
 then
 	 echo "---------------$NR3---------------"
          echo ""
@@ -73,7 +77,7 @@ then
 
 elif [[ $a = * ]]
 then 
-	echo "Invalid Input!!!"
+	echo "Invalid Input....Please try again!!!"
 
 else
   exit
