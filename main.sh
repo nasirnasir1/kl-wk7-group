@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "============================================"
 echo "             GROUP 8'S GAMELAND             "
 echo "--------------------------------------------"
@@ -59,7 +60,61 @@ case $name in
   Caleb | caleb)
     echo "CALEB'S GAME" ;;
   Nasir | nasir)
-    echo "NASIR'S GAME" ;;
+#Rock Paper Scissors Script
+#You probably already know how to play
+
+echo "Lets play Rock(0), Paper(1), Scissors(2)"
+sleep 2
+echo "Type a number to select a move"
+sleep 1
+echo "{0} For Rock"
+sleep 1
+echo "{1} For Paper"
+sleep 1
+echo "{2} For Scissors"
+
+read rps;
+compNum=$(($RANDOM % 3))
+
+if [ $rps -eq 0 ] && [ $compNum -eq 0 ];
+then
+ echo "You both choose Rock - No Winner"
+
+elif [ $rps -eq 1 ] && [ $compNum -eq 1 ];
+then
+ echo "You both choose Paper - No Winner"
+
+elif [ $rps -eq 2 ] && [ $compNum -eq 2 ];
+then
+ echo "You both choose Scissors - No Winner"
+
+elif [ $rps -eq 0 ] && [ $compNum -eq 1 ];
+then
+ echo "You chose Rock the computer chose Paper - You Lose"
+
+elif [ $rps -eq 0 ] && [ $compNum -eq 2 ];
+then
+ echo "You chose Rock the computer chose Scissors - You Win"
+
+elif [ $rps -eq 1 ] && [ $compNum -eq 0 ];
+then
+ echo "You chose Paper the computer chose Rock - You Win"
+
+elif [ $rps -eq 1 ] && [ $compNum -eq 2 ];
+then
+ echo "You chose Paper the computer chose Scissors - You Lose"
+
+elif [ $rps -eq 2 ] && [ $compNum -eq 0 ];
+then
+ echo "You chose Scissors the computer chose Rock - You Lose"
+
+elif [ $rps -eq 2 ] && [ $compNum -eq 1 ];
+then
+ echo "You chose Scissors the computer chose Paper - You Win"
+fi
+
+exit 0
+ ;;
   Quit | quit)
     ;;
   *)
@@ -70,3 +125,7 @@ esac
 echo "============================================"
 echo "             THANKS FOR PLAYING!            "
 echo "============================================"
+<<<<<<< HEAD
+=======
+>>>>>>> 2c7c3c50751321c01ba3a292fcfdb4ba263e0b92
+>>>>>>> rps
