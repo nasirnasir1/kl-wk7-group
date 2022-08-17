@@ -3,7 +3,7 @@
 # Creator:           Caleb Celius
 # Game_Title:        Nursery Rhymes Game
 # Game_Description:  Can't quite remember what all the lines in a nursery rhyme are??? Well fear not as this game provides you with a few nursery rhymes to choose from and shows you all the lyrics tho that particular nursery rhyme. I hope you have the courage the sing along!!!
-# Game_Version:      1.4
+# Game_Version:      1.5
 
 NR1="Jack and Jill"
 NR2="Itsy Bitsy Spider"
@@ -16,7 +16,7 @@ echo "(C) Mary Had a Little Lamb"
 
 
 read -r a
-if [[ $a = A ]]
+if a="A" or "a"
 then
         echo "---------------$NR1---------------"
 	echo ""
