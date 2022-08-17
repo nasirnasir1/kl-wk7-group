@@ -1,4 +1,4 @@
-#!/bin/bash
+                                   #!/bin/bash
 
 # Creator:           Caleb Celius
 # Game_Title:        Nursery Rhymes Guess
@@ -31,6 +31,42 @@ then
 	echo "To fetch the pail of water,"
 	echo "And took it home to Mother dear,"
 	echo "Who thanked her son and daughter."
+
+elif [[ $a=B ]]
+then
+ 	 echo "$NR2"
+ 	 echo "The itsy bitsy spider crawled up the water spout."
+	 echo "Down came the rain, and washed the spider out."
+	 echo "Out came the sun, and dried up all the rain,"
+	 echo "and the itsy bitsy spider went up the spout again."
+
+
+elif [[ $a=C ]]
+then
+	 echo "$NR3"
+	 echo "Mary Had a Little Lamb” Lyrics"
+	 echo "Mary had a little lamb,"
+	 echo "whose fleece was white as snow."
+
+	 echo "And everywhere that Mary went,"
+	 echo "the lamb was sure to go."
+
+	 echo "It followed her to school one day"
+	 echo "which was against the rules."
+
+	 echo "It made the children laugh and play,"
+	 echo "to see a lamb at school."
+
+	 echo "And so the teacher turned it out,"
+	 echo "but still it lingered near,"
+
+	 echo "And waited patiently about,"
+	 echo "till Mary did appear."
+
+
+else
+  exit
+
 
 fi
 
