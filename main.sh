@@ -7,7 +7,6 @@ echo " Adreonnis | Angela | Caden | Caleb | Nasir "
 echo "--------------------------------------------"
 read -p "Whose game would you like to play? " name
 echo "============================================"
-#echo $'--------------------------------------------'
 sleep 1
 
 case $name in
@@ -71,7 +70,7 @@ case $name in
     NR6="Head Shoulders Knees and Toes"
     NR7="Hickory Dickory Dock"
     NR8="Humpty Dumpty"
-    
+
     echo "-----------Select a Nursery rhymes-------------"
     echo "(A) Jack and Jill"
     echo "(B) Itsy Bitsy Spider"
@@ -86,9 +85,9 @@ case $name in
     echo "##########################################"
     echo "#        Please Select a Letter!         #"
     echo "##########################################"
-    
+
     read -r a
-    
+
     if  [[ $a = A || $a = a ]]
     then
             echo "---------------$NR1---------------"
@@ -106,7 +105,7 @@ case $name in
             echo "To fetch the pail of water,"
             echo "And took it home to Mother dear,"
             echo "Who thanked her son and daughter."
-    
+
     elif [[ $a = B || $a = b ]]
     then
              echo "---------------$NR2---------------"
@@ -116,9 +115,7 @@ case $name in
              echo "Down came the rain, and washed the spider out."
              echo "Out came the sun, and dried up all the rain,"
              echo "and the itsy bitsy spider went up the spout again."
-    
-    
-    
+
     elif [[ $a = C || $a = c ]]
     then
              echo "---------------$NR3---------------"
@@ -127,22 +124,22 @@ case $name in
              echo "Mary Had a Little Lamb Lyrics"
              echo "Mary had a little lamb,"
              echo "whose fleece was white as snow."
-    
+
              echo "And everywhere that Mary went,"
              echo "the lamb was sure to go."
-    
+
              echo "It followed her to school one day"
              echo "which was against the rules."
-    
+
              echo "It made the children laugh and play,"
              echo "to see a lamb at school."
-    
+
              echo "And so the teacher turned it out,"
              echo "but still it lingered near,"
-    
+
              echo "And waited patiently about,"
              echo "till Mary did appear."
-    
+
     elif [[ $a = D || $a = d ]]
     then
              echo "---------------$NR4---------------"
@@ -152,20 +149,20 @@ case $name in
     	 echo "To see what he could see, see, see"
     	 echo "But all that he could see, see, see"
     	 echo "Was the bottom of the deep blue sea, sea, sea!"
-    
+
     	 echo "A sailor went to knee, knee, knee"
     	 echo "To see what he could knee, knee, knee"
     	 echo "But all that he could knee, knee, knee"
     	 echo "Was the bottom of the deep blue knee, knee, knee!"
     	 echo "Sea, sea, sea"
-    
+
     	 echo "A sailor went to chop, chop, chop"
     	 echo "To see what he could chop, chop, chop"
     	 echo "But all that he could chop, chop, chop"
     	 echo "Was the bottom of the deep blue chop, chop, chop!"
     	 echo "Knee, knee, knee"
     	 echo "Sea, sea, sea"
-    
+
     elif [[ $a = E || $a = e ]]
     then
              echo "---------------$NR5---------------"
@@ -177,42 +174,42 @@ case $name in
     	 echo "B-I-N-G-O!"
     	 echo "B-I-N-G-O!"
     	 echo "And Bingo was his name-O!"
-    
+
     	 echo "There was a farmer who had a dog,"
     	 echo "And Bingo was his name-O."
     	 echo "(Clap)-I-N-G-O!"
     	 echo "(Clap)-I-N-G-O!"
     	 echo "(Clap)-I-N-G-O!"
     	 echo "And Bingo was his name-O!"
-    
+
      	 echo "There was a farmer who had a dog,"
              echo "And Bingo was his name-O."
              echo "(Clap - Clap)-N-G-O!"
              echo "(Clap - Clap)-N-G-O!"
              echo "(Clap - Clap)-N-G-O!"
              echo "And Bingo was his name-O!"
-    
+
     	 echo "There was a farmer who had a dog,"
              echo "And Bingo was his name-O."
              echo "(Clap - Clap - Clap)-G-O!"
              echo "(Clap - Clap - Clap)-G-O!"
              echo "(Clap - Clap - Clap)-G-O!"
              echo "And Bingo was his name-O!"
-    
+
     	 echo "There was a farmer who had a dog,"
              echo "And Bingo was his name-O."
              echo "(Clap - Clap - Clap - Clap)-O!"
              echo "(Clap - Clap - Clap - Clap)-O!"
              echo "(Clap - Clap - Clap - Clap)-O!"
              echo "And Bingo was his name-O!"
-    
+
     	 echo "There was a farmer who had a dog,"
              echo "And Bingo was his name-O."
              echo "(Clap - Clap - Clap - Clap - Clap)"
              echo "(Clap - Clap - Clap - Clap - Clap)"
              echo "(Clap - Clap - Clap - Clap - Clap)"
              echo "And Bingo was his name-O!"
-    
+
     elif [[ $a = F || $a = f ]]
     then
              echo "---------------$NR6---------------"
@@ -226,7 +223,7 @@ case $name in
     	 echo "Head, shoulders, knees and toes,"
     	 echo "Knees and toes."
     	 echo "(Repeat)"
-    
+
     elif [[ $a = G || $a = g ]]
     then
              echo "---------------$NR7---------------"
@@ -237,13 +234,13 @@ case $name in
     	 echo "The clock struck one"
     	 echo "The mouse ran down"
     	 echo "Hickory Dickory Dock"
-    
+
     	 echo "Hickory Dickory Dock"
     	 echo "The mouse ran up the clock"
     	 echo "The clock struck two"
     	 echo "The mouse went boo!"
     	 echo "Hickroy Dickory Dock"
-    
+
     elif [[ $a = H || $a = h ]]
     then
              echo "---------------$NR8---------------"
@@ -252,12 +249,12 @@ case $name in
     	 echo "Humpty Dumpty sat on a wall,"
     	 echo "Humpty Dumpty had a great fall."
     	 echo "All the King’s horses and all the King’s men,"
-    	 echo "Couldn’t put Humpty together again."  
-    
+    	 echo "Couldn’t put Humpty together again."
+
     elif [[ $a = * ]]
     then
             echo "Invalid Input....Please try again!!!"
-    
+
     else
       exit
     fi
@@ -275,47 +272,47 @@ case $name in
     echo "{1} For Paper"
     sleep 1
     echo "{2} For Scissors"
-    
+
     read rps;
     compNum=$(($RANDOM % 3))
-    
+
     if [ $rps -eq 0 ] && [ $compNum -eq 0 ];
     then
      echo "You both choose Rock - No Winner"
-    
+
     elif [ $rps -eq 1 ] && [ $compNum -eq 1 ];
     then
      echo "You both choose Paper - No Winner"
-    
+
     elif [ $rps -eq 2 ] && [ $compNum -eq 2 ];
     then
      echo "You both choose Scissors - No Winner"
-    
+
     elif [ $rps -eq 0 ] && [ $compNum -eq 1 ];
     then
      echo "You chose Rock the computer chose Paper - You Lose"
-    
+
     elif [ $rps -eq 0 ] && [ $compNum -eq 2 ];
     then
      echo "You chose Rock the computer chose Scissors - You Win"
-    
+
     elif [ $rps -eq 1 ] && [ $compNum -eq 0 ];
     then
      echo "You chose Paper the computer chose Rock - You Win"
-    
+
     elif [ $rps -eq 1 ] && [ $compNum -eq 2 ];
     then
      echo "You chose Paper the computer chose Scissors - You Lose"
-    
+
     elif [ $rps -eq 2 ] && [ $compNum -eq 0 ];
     then
      echo "You chose Scissors the computer chose Rock - You Lose"
-    
+
     elif [ $rps -eq 2 ] && [ $compNum -eq 1 ];
     then
      echo "You chose Scissors the computer chose Paper - You Win"
     fi
-    
+
     exit 0
     ;;
   Quit | quit)
