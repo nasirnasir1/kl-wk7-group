@@ -20,10 +20,11 @@ echo "#        Please Select a Letter!         #"
 echo "##########################################"
 
 read -r a
-if  [[ $a = A || $a = a ]]
-then
+
+while  [[ $a = A || $a = a ]]
+do
         echo "---------------$NR1---------------"
-	echo ""
+        echo ""
         sleep 1
         echo "Jack and Jill went up the hill"
         echo "To fetch a pail of water."
@@ -37,9 +38,11 @@ then
         echo "To fetch the pail of water,"
         echo "And took it home to Mother dear,"
         echo "Who thanked her son and daughter."
+        
+done
 
-elif [[ $a = B || $a = b ]]
-then
+while [[ $a = B || $a = b ]]
+do
 	 echo "---------------$NR2---------------"
        	 echo ""
          sleep 1
@@ -47,11 +50,10 @@ then
          echo "Down came the rain, and washed the spider out."
          echo "Out came the sun, and dried up all the rain,"
          echo "and the itsy bitsy spider went up the spout again."
-         
-         
+done
 
-elif [[ $a = C || $a = c ]]
-then
+while [[ $a = C || $a = c ]]
+do
 	 echo "---------------$NR3---------------"
          echo ""
          sleep 1
@@ -74,14 +76,14 @@ then
          echo "And waited patiently about,"
          echo "till Mary did appear."
 
+done
 
-elif [[ $a = * ]]
+if [[ $a = * ]]
 then 
 	echo "Invalid Input....Please try again!!!"
 
 else
   exit
-
 
 fi
 
