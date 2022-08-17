@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Creator:           Caleb Celius
-# Game_Title:        Nursery Rhymes Guess
-# Game_Description:  This game provides you with only piece of a nursery rhyme and you are to guess the other pieces by selecting what words you thing should come next.
-# Game_Version:      1.0
+# Game_Title:        Nursery Rhymes Game
+# Game_Description:  Can't quite remember what all the lines in a nursery rhyme are??? Well fear not as this game provides you with a few nursery rhymes to choose from and shows you all the lyrics tho that particular nursery rhyme. I hope you have the courage the sing along!!!
+# Game_Version:      1.4
 
 NR1="Jack and Jill"
 NR2="Itsy Bitsy Spider"
@@ -18,7 +18,9 @@ echo "(C) Mary Had a Little Lamb"
 read -r a
 if [[ $a = A ]]
 then
-        echo "$NR1"
+        echo "---------------$NR1---------------"
+	echo ""
+        sleep 1
         echo "Jack and Jill went up the hill"
         echo "To fetch a pail of water."
         echo "Jack fell down and broke his crown,"
@@ -34,7 +36,9 @@ then
 
 elif [[ $a = B ]]
 then
-         echo "$NR2"
+	 echo "---------------$NR2---------------"
+       	 echo ""
+         sleep 1
          echo "The itsy bitsy spider crawled up the water spout."
          echo "Down came the rain, and washed the spider out."
          echo "Out came the sun, and dried up all the rain,"
@@ -44,7 +48,9 @@ then
 
 elif [[ $a = C ]]
 then
-         echo "$NR3"
+	 echo "---------------$NR3---------------"
+         echo ""
+         sleep 1
          echo "Mary Had a Little Lamb Lyrics"
          echo "Mary had a little lamb,"
          echo "whose fleece was white as snow."
@@ -64,6 +70,10 @@ then
          echo "And waited patiently about,"
          echo "till Mary did appear."
 
+
+elif [[ $a = * ]]
+then 
+	echo "Invalid Input!!!"
 
 else
   exit
