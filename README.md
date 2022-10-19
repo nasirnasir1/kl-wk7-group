@@ -6,7 +6,7 @@ GAME HUB is the place where people go to kill some time on the command line. Yes
 ## Game Designers
 - @github/cadenhong :red_circle: Dad Jokes
 - @github/cceliuss187 :red_circle: Nursery Rhymes Game
-- @github/nasirnasir1 :red_circle: Rock, Paper Scissors
+- @github/nasiryork :red_circle: Rock, Paper Scissors
 - @github/angela-andrews :red_circle: Hangman
 - @github/AdreReyes :red_circle:
 
